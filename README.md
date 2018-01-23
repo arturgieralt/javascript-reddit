@@ -1,6 +1,7 @@
-## THE BOILERPLATE WAS PREPARED BY CORY HOUSE
+## The /src code by Artur Gieralt.
 
-The /src code by Artur Gieralt.
+THE BOILERPLATE WAS PREPARED BY CORY HOUSE
+
 This is simple app that gets the last articles from Javascript subreddit.
 
 Adding comments is totaly mocked.
