@@ -2,18 +2,11 @@ export const GO_PREV = "before";
 export const GO_NEXT = "after";
 const cachedArticleLists = {};
 const cachedArticles = {};
-const comments = [
-    {
-        articleId: "testId",
-        login: "gieri",
-        text: "text bla bla bla bla"
-    },
-    {
-        articleId: "testId",
-        login: "gieri",
-        text: "text bla bla bla bla2"
-    }
-];
+const comments = [{
+    author: "Artur",
+    articleId: "7sd1pb",
+    text: "My first comment"
+}];
 
 // prevents from calling reddit too often
 function cacheAndReturnFetchResults(url, cacheObject){
@@ -63,13 +56,13 @@ export class RedditApi {
 
 export class CommentApi {
 
-    static getAllComments(articleId){
+    static getComments(){
         
         return new Promise((resolve, reject) => {
             debugger;
-            resolve(comments.filter(comment => {
-               return comment.articleId === articleId;
-            }));
+
+                resolve(comments);
+
         });
     }
 
@@ -77,15 +70,8 @@ export class CommentApi {
         comment = Object.assign({}, comment);
         debugger;
         return new Promise((resolve, reject) => {
-            const minLoginLength = 1;
-            const minTextLength = 10;
-            if (comment.login.length >= minLoginLength && comment.text.length >= minTextLength ){
-                comments.push(comment);
-                resolve(comment);
-            } else {
-                reject(`Check length of your comment (min len = ${minTextLength}) 
-                or login (min len = ${minLoginLength})`);
-            }       
+            comments.push(comment);
+            resolve(comment);   
         });
     }
 }

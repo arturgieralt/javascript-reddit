@@ -5,7 +5,7 @@ const ArticleListRow = ({article, onOpen}) => {
     return (
         <tr>
             <td><a href={article.data.url}>Open</a></td>
-            <td><Link onClick={() => {onOpen(article.data.id)}} to={'/' + article.data.id}>{article.data.title}</Link></td>
+            <td><Link onClick={() => {onOpen(article.data.id)}} to={'/article/' + article.data.id}>{article.data.title}</Link></td>
             <td>{article.data.author}</td>
             </tr>
 

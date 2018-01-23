@@ -9,13 +9,13 @@ class MainPage extends React.Component {
 
     constructor(props,context){
         super(props,context);
-        debugger;
+    //    debugger;
         this.loadArticleData = this.loadArticleData.bind(this);
    } 
 
 
    loadArticleData(articleId){
-       debugger;
+    //   debugger;
        this.props.actions.loadArticle(articleId);
    }
 

@@ -1,4 +1,19 @@
-# Starter Kit for [Building Applications in React and Redux in ES6](http://www.pluralsight.com/author/cory-house) on Pluralsight
+## THE BOILERPLATE WAS PREPARED BY CORY HOUSE
+
+The /src code by Artur Gieralt.
+This is simple app that gets the last articles from Javascript subreddit.
+
+Adding comments is totaly mocked.
+
+Getting data from reddit is memoized in mockRedditApi.js to reduce down the number of calls to API.
+
+No tests yet.
+No pagination yet.
+The ugliest project I've ever done and seen :( 
+
+
+
+
 
 ## Get Started
 1. **Install [Node 6](https://nodejs.org)**. Need to run multiple versions of Node? Use [nvm](https://github.com/creationix/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows)

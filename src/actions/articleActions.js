@@ -3,9 +3,15 @@ import * as Api from '../api/mockRedditApi';
 
 
 export function loadArticleListSuccess (articles) {
-    debugger;
+  //  debugger;
     return {type: Types.LOAD_ARTICLE_LIST_SUCCESS, articles};
 }
+
+
+export function loadArticleSuccess (article) {
+    //  debugger;
+      return {type: Types.LOAD_ARTICLE_SUCCESS, article};
+  }
 
 export function loadArticleList(){
     return function(dispatch){
@@ -20,10 +26,6 @@ export function loadArticleList(){
 }
 
 
-export function loadArticleSuccess (article) {
-    debugger;
-    return {type: Types.LOAD_ARTICLE_SUCCESS, article};
-}
 
 export function loadArticle(articleId){
     return function(dispatch){
