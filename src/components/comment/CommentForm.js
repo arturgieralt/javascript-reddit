@@ -37,6 +37,7 @@ const CommentForm = ({onSave, onChange, comment}) => {
 
 CommentForm.propTypes = {
     onSave: PropTypes.func.isRequired,
+    onChange: PropTypes.func.isRequired,
     comment: PropTypes.object.isRequired
 };
 
